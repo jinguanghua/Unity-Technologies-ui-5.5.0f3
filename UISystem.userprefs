@@ -1,0 +1,14 @@
+﻿<Properties StartupItem="UnityEngine.UI\UnityEngine.UI.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="UnityEngine.UI\UI\Core\Text.cs">
+    <Files>
+      <File FileName="UnityEngine.UI\UI\Core\Text.cs" Line="141" Column="5" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="D:\github\Projects-Unity3D\UGUI\Unity-Technologies-ui-5.5.0f3\Unity-Technologies-ui-a72913523bde\UnityEngine.UI\UI\Core\Text.cs" line="142" column="30" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
