@@ -41,8 +41,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="UnityEngine">
       <HintPath>..\lib\UnityEngine.dll</HintPath>
     </Reference>
   </ItemGroup>
@@ -295,6 +294,7 @@
     <Compile Include="UI\Core\VertexModifiers\Shadow.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="UI\IgnoreLayoutRebuild.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

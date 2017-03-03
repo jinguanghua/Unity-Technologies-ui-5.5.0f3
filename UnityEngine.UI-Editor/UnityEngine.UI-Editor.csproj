@@ -41,12 +41,10 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="UnityEditor, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="UnityEditor">
       <HintPath>..\lib\UnityEditor.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="UnityEngine">
       <HintPath>..\lib\UnityEngine.dll</HintPath>
     </Reference>
   </ItemGroup>
@@ -398,5 +396,6 @@
       <Link>UI\Core\VertexModifiers\Shadow.cs</Link>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="UI\IgnoreLayoutRebuild.cs" />
   </ItemGroup>
 </Project>

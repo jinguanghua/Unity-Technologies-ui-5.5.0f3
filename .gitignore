@@ -41,24 +41,10 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
-*.dll
-*.dll
-Output/Editor/UnityEditor.UI.dll.mdb
 *.mdb
-Output/Editor/UnityEditor.UI.pdb
 *.pdb
 tags
-UISystem.userprefs
 *.userprefs
 *.cache
-UnityEngine.UI/UI/Core/Layout/.HorizontalOrVerticalLayoutGroup.cs.swp
-*.swp
-UnityEngine.UI/UI/Core/.Image.cs.swp
 *.swp
 *.dll
-*.mdb
-Output/Editor/UnityEditor.UI.pdb
-*.pdb
-*.pdb
-Output/UnityEngine.UI.dll
-*.mdb

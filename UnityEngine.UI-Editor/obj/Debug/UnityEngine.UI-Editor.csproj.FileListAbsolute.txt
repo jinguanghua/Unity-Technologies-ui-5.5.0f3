@@ -2,6 +2,5 @@ D:\github\Projects-Unity3D\UGUI\Unity-Technologies-ui-5.5.0f3\Unity-Technologies
 D:\github\Projects-Unity3D\UGUI\Unity-Technologies-ui-5.5.0f3\Unity-Technologies-ui-a72913523bde\UnityEngine.UI-Editor\bin\Debug\UnityEngine.UI.pdb
 D:\github\Projects-Unity3D\UGUI\Unity-Technologies-ui-5.5.0f3\Unity-Technologies-ui-a72913523bde\UnityEngine.UI-Editor\bin\Debug\UnityEditor.dll
 D:\github\Projects-Unity3D\UGUI\Unity-Technologies-ui-5.5.0f3\Unity-Technologies-ui-a72913523bde\UnityEngine.UI-Editor\bin\Debug\UnityEngine.dll
-D:\github\Projects-Unity3D\UGUI\Unity-Technologies-ui-5.5.0f3\Unity-Technologies-ui-a72913523bde\UnityEngine.UI-Editor\obj\Debug\UnityEngine.UI-Editor.csprojResolveAssemblyReference.cache
 D:\github\Projects-Unity3D\UGUI\Unity-Technologies-ui-5.5.0f3\Unity-Technologies-ui-a72913523bde\UnityEngine.UI-Editor\obj\Debug\UnityEngine.UI.dll
 D:\github\Projects-Unity3D\UGUI\Unity-Technologies-ui-5.5.0f3\Unity-Technologies-ui-a72913523bde\UnityEngine.UI-Editor\obj\Debug\UnityEngine.UI.pdb

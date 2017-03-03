@@ -118,8 +118,18 @@ namespace UnityEngine.UI
                     var rebuild = instance.m_LayoutRebuildQueue[j];
                     try
                     {
-                        if (ObjectValidForUpdate(rebuild))
-                            rebuild.Rebuild((CanvasUpdate)i);
+						if (ObjectValidForUpdate(rebuild)){
+
+							IgnoreLayoutRebuild ignore = rebuild.transform.GetComponent<IgnoreLayoutRebuild>();
+							if(ignore != null && ignore.ignore) {
+								int noop = 0;
+								noop++;
+							}
+							else {
+								// Debug.LogWarning(string.Format("CanvasUpdate.Rebuild:{0}", rebuild.transform.name));
+								rebuild.Rebuild((CanvasUpdate)i);
+							}
+						}
                     }
                     catch (Exception e)
                     {
@@ -236,6 +246,30 @@ namespace UnityEngine.UI
             instance.InternalUnRegisterCanvasElementForLayoutRebuild(element);
             instance.InternalUnRegisterCanvasElementForGraphicRebuild(element);
         }
+
+		public static void UnRegisterCanvasElementForLayoutRebuild(RectTransform element) {
+			instance.InternalUnRegisterCanvasElementForLayoutRebuild(element);
+		}
+
+		private void InternalUnRegisterCanvasElementForLayoutRebuild(RectTransform element) {
+
+            if (m_PerformingLayoutUpdate)
+            {
+                Debug.LogError(string.Format("Trying to remove {0} from rebuild list while we are already inside a rebuild loop. This is not supported.", element));
+                return;
+            }
+			
+			for(int i=instance.m_LayoutRebuildQueue.Count-1; i>=0; i--) {
+				ICanvasElement layoutElement = instance.m_LayoutRebuildQueue[i];
+				LayoutRebuilder rebuilder = layoutElement as LayoutRebuilder;
+				if(rebuilder != null) {
+					if(rebuilder.transform == element) {
+						layoutElement.LayoutComplete();
+						instance.m_LayoutRebuildQueue.RemoveAt(i);
+					}
+				}
+			}
+		}
 
         private void InternalUnRegisterCanvasElementForLayoutRebuild(ICanvasElement element)
         {

@@ -58,20 +58,27 @@ namespace UnityEngine.UI
             s_Rebuilders.Release(rebuilder);
         }
 
+		public static void RemoveRebuildLayoutImmediate(RectTransform layoutRoot) {
+			CanvasUpdateRegistry.UnRegisterCanvasElementForLayoutRebuild(layoutRoot);
+		}
+
         public void Rebuild(CanvasUpdate executing)
         {
             switch (executing)
             {
-                case CanvasUpdate.Layout:
-                    // It's unfortunate that we'll perform the same GetComponents querys for the tree 2 times,
-                    // but each tree have to be fully iterated before going to the next action,
-                    // so reusing the results would entail storing results in a Dictionary or similar,
-                    // which is probably a bigger overhead than performing GetComponents multiple times.
-                    PerformLayoutCalculation(m_ToRebuild, e => (e as ILayoutElement).CalculateLayoutInputHorizontal());
-                    PerformLayoutControl(m_ToRebuild, e => (e as ILayoutController).SetLayoutHorizontal());
-                    PerformLayoutCalculation(m_ToRebuild, e => (e as ILayoutElement).CalculateLayoutInputVertical());
-                    PerformLayoutControl(m_ToRebuild, e => (e as ILayoutController).SetLayoutVertical());
-                    break;
+			case CanvasUpdate.Layout:
+
+				// Debug.LogWarning (string.Format ("LayoutRebuilder.Rebuild{0}", m_ToRebuild.name));
+
+				// It's unfortunate that we'll perform the same GetComponents querys for the tree 2 times,
+				// but each tree have to be fully iterated before going to the next action,
+				// so reusing the results would entail storing results in a Dictionary or similar,
+				// which is probably a bigger overhead than performing GetComponents multiple times.
+				PerformLayoutCalculation(m_ToRebuild, e => (e as ILayoutElement).CalculateLayoutInputHorizontal());
+				PerformLayoutControl(m_ToRebuild, e => (e as ILayoutController).SetLayoutHorizontal());
+				PerformLayoutCalculation(m_ToRebuild, e => (e as ILayoutElement).CalculateLayoutInputVertical());
+				PerformLayoutControl(m_ToRebuild, e => (e as ILayoutController).SetLayoutVertical());
+				break;
             }
         }
 
