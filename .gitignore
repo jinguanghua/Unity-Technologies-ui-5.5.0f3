@@ -51,3 +51,14 @@ tags
 UISystem.userprefs
 *.userprefs
 *.cache
+UnityEngine.UI/UI/Core/Layout/.HorizontalOrVerticalLayoutGroup.cs.swp
+*.swp
+UnityEngine.UI/UI/Core/.Image.cs.swp
+*.swp
+*.dll
+*.mdb
+Output/Editor/UnityEditor.UI.pdb
+*.pdb
+*.pdb
+Output/UnityEngine.UI.dll
+*.mdb
