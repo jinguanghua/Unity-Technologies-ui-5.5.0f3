@@ -122,8 +122,8 @@ namespace UnityEngine.UI
 
 							IgnoreLayoutRebuild ignore = rebuild.transform.GetComponent<IgnoreLayoutRebuild>();
 							if(ignore != null && ignore.ignore) {
-								int noop = 0;
-								noop++;
+								// int noop = 0;
+								// noop++;
 							}
 							else {
 								// Debug.LogWarning(string.Format("CanvasUpdate.Rebuild:{0}", rebuild.transform.name));
