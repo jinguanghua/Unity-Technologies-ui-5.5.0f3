@@ -1,19 +1,13 @@
 ﻿<Properties StartupItem="UnityEngine.UI\UnityEngine.UI.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="UnityEngine.UI\UI\Core\CanvasUpdateRegistry.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="d:\github\Projects-Unity3D\UGUI\Unity-Technologies-ui-5.5.0f3\Unity-Technologies-ui-a72913523bde\UnityEngine.UI\UI\Core\CanvasUpdateRegistry.cs">
     <Files>
-      <File FileName="UnityEngine.UI\UI\Core\CanvasUpdateRegistry.cs" Line="195" Column="1" />
-      <File FileName="d:\github\Projects-Unity3D\UGUI\Unity-Technologies-ui-5.5.0f3\Unity-Technologies-ui-a72913523bde\UnityEngine.UI\UI\Core\Layout\LayoutElement.cs" Line="37" Column="14" />
-      <File FileName="d:\github\Projects-Unity3D\UGUI\Unity-Technologies-ui-5.5.0f3\Unity-Technologies-ui-a72913523bde\UnityEngine.UI\UI\Core\Graphic.cs" Line="89" Column="1" />
-      <File FileName="..\..\..\GameFramework\Assets\GameFramework\GameManager\AssetPoolManager.cs" Line="65" Column="1" />
-      <File FileName="d:\github\Projects-Unity3D\UGUI\Unity-Technologies-ui-5.5.0f3\Unity-Technologies-ui-a72913523bde\UnityEngine.UI\UI\Core\Text.cs" Line="364" Column="33" />
-      <File FileName="d:\github\Projects-Unity3D\UGUI\Unity-Technologies-ui-5.5.0f3\Unity-Technologies-ui-a72913523bde\UnityEngine.UI\UI\Core\Layout\LayoutRebuilder.cs" Line="69" Column="63" />
+      <File FileName="UnityEngine.UI\UI\Core\Layout\LayoutRebuilder.cs" Line="69" Column="29" />
+      <File FileName="d:\github\Projects-Unity3D\UGUI\Unity-Technologies-ui-5.5.0f3\Unity-Technologies-ui-a72913523bde\UnityEngine.UI\UI\Core\CanvasUpdateRegistry.cs" Line="122" Column="8" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="D:\github\Projects-Unity3D\UGUI\Unity-Technologies-ui-5.5.0f3\Unity-Technologies-ui-a72913523bde\UnityEngine.UI\UI\Core\CanvasUpdateRegistry.cs" line="190" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
