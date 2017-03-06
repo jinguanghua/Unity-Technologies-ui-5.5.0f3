@@ -58,10 +58,6 @@ namespace UnityEngine.UI
             s_Rebuilders.Release(rebuilder);
         }
 
-		public static void RemoveRebuildLayoutImmediate(RectTransform layoutRoot) {
-			CanvasUpdateRegistry.UnRegisterCanvasElementForLayoutRebuild(layoutRoot);
-		}
-
         public void Rebuild(CanvasUpdate executing)
         {
             switch (executing)

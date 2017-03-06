@@ -247,30 +247,6 @@ namespace UnityEngine.UI
             instance.InternalUnRegisterCanvasElementForGraphicRebuild(element);
         }
 
-		public static void UnRegisterCanvasElementForLayoutRebuild(RectTransform element) {
-			instance.InternalUnRegisterCanvasElementForLayoutRebuild(element);
-		}
-
-		private void InternalUnRegisterCanvasElementForLayoutRebuild(RectTransform element) {
-
-            if (m_PerformingLayoutUpdate)
-            {
-                Debug.LogError(string.Format("Trying to remove {0} from rebuild list while we are already inside a rebuild loop. This is not supported.", element));
-                return;
-            }
-			
-			for(int i=instance.m_LayoutRebuildQueue.Count-1; i>=0; i--) {
-				ICanvasElement layoutElement = instance.m_LayoutRebuildQueue[i];
-				LayoutRebuilder rebuilder = layoutElement as LayoutRebuilder;
-				if(rebuilder != null) {
-					if(rebuilder.transform == element) {
-						layoutElement.LayoutComplete();
-						instance.m_LayoutRebuildQueue.RemoveAt(i);
-					}
-				}
-			}
-		}
-
         private void InternalUnRegisterCanvasElementForLayoutRebuild(ICanvasElement element)
         {
             if (m_PerformingLayoutUpdate)
